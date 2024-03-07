@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: #0084fd;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.menu-list{
+    list-style-type: none;  
+    display: none;  
+}
+
+.menu-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.start-today{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 35px;
+    color: black;
+    background-color: white;   
+}
+
+.hamburger > button{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.3rem;
+    color: white;
+}
