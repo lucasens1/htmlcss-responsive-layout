@@ -17,7 +17,9 @@ a{
 .text-center{
     text-align: center;
 }
-
+.white-txt{
+    color: white;
+}
 .box{
     width: 70%;
 }
@@ -181,32 +183,36 @@ header{
 
 /*STRATEGIC PLAN LAYOUT*/
 .strat-container{
-    background-color: #9792e4;
-    border: 1px solid black;
-    
+    background-color: #9792e4;  
 }
 
 .middle-container{
     padding-top: 40px;
     width: 80%;
-    margin: 0 auto;
-    height: 600px;
-    background-color: rgb(255, 135, 135);
-    border: 1px solid black;
+    margin: 0 auto;  
 }
 .top-mid-sect{
     width: 100%;
-    height: 500px;
-    background-color: #4b3efa;
+    background-color: #9792e4;
 
 }
 .inside-container{
     width: 100%;
-    height: 400px;
+    padding-bottom: 20px;
     background-color: white;
     border-radius: 45px;
-    border: 1px solid black;
 }
+
+.style-arrow{
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 100%;
+    background-color: #9792e4;
+}
+
 /*STRATEGIC PLAN DESKTOP*/
 @media screen and (min-width : 992px){
     .middle-container{
@@ -218,6 +224,7 @@ header{
 
     .top-mid-sect{
         width: 50%;
+        padding-bottom: 125px;
     }
 
     .inside-container{
