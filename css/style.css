@@ -69,12 +69,18 @@ a{
 .cursor-yes{
     cursor: pointer;
 }
+
+/*TEXT FORMATTING*/
 .pd-15{
     padding: 15px;
 }
 
 .pd-b-20{
     padding-bottom: 20px;
+}
+
+.pd-b-60{
+    padding-bottom: 60px;
 }
 
 .mrg-r-10{
@@ -102,6 +108,12 @@ a{
 }
 .violet-text{
     color: #9792e4;
+}
+.light-grey{
+    color: #cdcbf1;
+}
+.ocra{
+    color: #fdc15f;
 }
 /*POSITION*/
 .abs{
@@ -450,25 +462,22 @@ header{
 }
 
 /*GET STARTED */
-
-.btm-container{
-    height: 400px;
-    width: 65%;
-    background-color: #eef363;
-    margin: 0 auto;
+.btn-style-getst{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 35px;
+    background-color: white; 
 }
 
-
+.undrln{
+    text-decoration: underline;
+}
 /*FOOTER*/
 .foot-container{
     width: 100%;
     background-color: #333333;
 }
 .small-container{
-    width: 60%;
-    height: 300px;
+    width: 45%;   
     margin: 0 auto;
-    background-color: crimson;
-    border: 1px solid black;
 }
-
