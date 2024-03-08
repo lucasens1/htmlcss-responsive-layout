@@ -1,3 +1,4 @@
+/*GENERAL RESET*/
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +9,51 @@ img{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*COMMON*/
 .text-center{
     text-align: center;
+}
+
+.box{
+    width: 70%;
+}
+
+.box > i{
+    font-size: 5rem;
+    padding: 15px;
+    color: #0084fd;
+}
+.box > img{
+    display: block;
+}
+
+.col p{
+    color: #5a6e7f;
+    line-height: 1.7rem;
+    padding: 25px;
+}
+
+.top-container h4{
+    color: #0084fd;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.app-dwnld{
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0084fd;
+    border-radius: 15px;
+}
+
+/*UTILITIES*/
+.pd-15{
+    padding: 15px;
 }
 
 
@@ -21,9 +65,7 @@ header{
     left: 0;
     height: 60px;
     width: 100%;
-    /*DEBUG*/
     background-color: #0084fd;
-    border: 1px solid black;
 }
 
 .header-container{
@@ -32,8 +74,7 @@ header{
     align-items: center;
     height: 100%;
     padding: 10px;
-    /*DEBUG*/
-    border: 1px solid black;
+    
 }
 
 .menu-list{
@@ -59,27 +100,20 @@ header{
     border: 0;
     font-size: 1.3rem;
     color: white;
+    cursor: pointer;
 }
 /*TOP LAYOUT*/
 .top-container{
-    padding-top: 100px;
+    padding-top: 80px;
     width: 80%;
     margin: 0 auto;
-    /*DBEUG*/
-    height: 900px;
-    background-color: chocolate;
-    border: 1px solid black;
 }
 
 .col{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    /*DEBUG*/
-    height: 200px;
-    background-color: cadetblue;
-    border: 1px solid black;
 }
 
 .card {
@@ -88,9 +122,9 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     /*DEBUG*/
     background-color: #b5ddff;
-    border: 1px solid black;
 }
 
 /*  TOP LAYOUT TABLET */
@@ -120,9 +154,9 @@ header{
 }
 /*TOP LAYOUT DESKTOP */
 @media screen and (min-width:992px){
-    .col:first-child .card{
+    .col:first-child{
         display: flex;
-        justify-content: space-around;
+        display: row;
     }
 
     .hamburger{
@@ -203,12 +237,7 @@ header{
     border: 1px solid black;
 }
 
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    border: 1px solid black;
-}
+
 
 /*TESTIMONIALS TABLET*/
 @media screen and (min-width : 768px) {
