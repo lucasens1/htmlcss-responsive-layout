@@ -8,14 +8,21 @@ img{
     max-width: 100%;
 }
 
+.text-center{
+    text-align: center;
+}
+
+
+
 /*HEADER SETTINGS*/
 header{
     position: fixed;
     top: 0;
     left: 0;
     height: 60px;
-    background-color: #0084fd;
     width: 100%;
+    /*DEBUG*/
+    background-color: #0084fd;
     border: 1px solid black;
 }
 
@@ -25,6 +32,7 @@ header{
     align-items: center;
     height: 100%;
     padding: 10px;
+    /*DEBUG*/
     border: 1px solid black;
 }
 
@@ -38,7 +46,7 @@ header{
     color: white;
 }
 
-.start-today{
+#start-today{
     display: inline-block;
     padding: 5px 10px;
     border-radius: 35px;
@@ -57,6 +65,7 @@ header{
     padding-top: 100px;
     width: 80%;
     margin: 0 auto;
+    /*DBEUG*/
     height: 900px;
     background-color: chocolate;
     border: 1px solid black;
@@ -64,15 +73,22 @@ header{
 
 .col{
     width: 100%;
-    background-color: cadetblue;
-    height: 200px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    /*DEBUG*/
+    height: 200px;
+    background-color: cadetblue;
     border: 1px solid black;
 }
 
 .card {
     border-radius: 25px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*DEBUG*/
     background-color: #b5ddff;
     border: 1px solid black;
 }
@@ -93,12 +109,31 @@ header{
     .col:first-child{
         width: 60%;
     }
+
+    .card{
+        align-items: left;
+    }
+
+    .card.text-center{
+        text-align: left;
+    }
 }
 /*TOP LAYOUT DESKTOP */
 @media screen and (min-width:992px){
     .col:first-child .card{
         display: flex;
         justify-content: space-around;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .menu-list{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -137,16 +172,16 @@ header{
     .middle-container{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         gap: 10px;
     }
 
     .top-mid-sect{
-        width: 45%;
+        width: 50%;
     }
 
     .inside-container{
-        width: 45%;
+        width: 50%;
     }
 }
 
