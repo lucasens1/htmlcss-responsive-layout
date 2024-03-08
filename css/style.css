@@ -28,14 +28,16 @@ a{
     color: #0084fd;
 }
 .box > img{
+    padding-top: 20px;
     display: block;
 }
 
 .col p{
     color: #5a6e7f;
     line-height: 1.7rem;
-    padding: 25px;
+    padding: 15px;
 }
+
 
 .top-container h4{
     color: #0084fd;
@@ -111,7 +113,7 @@ header{
 
 .col{
     width: 100%;
-    margin-bottom: 20px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -133,7 +135,6 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
     }
 
     .col{
@@ -154,9 +155,14 @@ header{
 }
 /*TOP LAYOUT DESKTOP */
 @media screen and (min-width:992px){
-    .col:first-child{
+    .top-container .col:first-child .card{
         display: flex;
-        display: row;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .col:first-child .card .box{
+        width: 100%;
     }
 
     .hamburger{
