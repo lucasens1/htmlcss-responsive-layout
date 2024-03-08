@@ -17,9 +17,14 @@ a{
 .text-center{
     text-align: center;
 }
+.thin-text{
+    font-weight: 300;
+}
 .white-txt{
     color: white;
 }
+
+
 .box{
     width: 70%;
 }
@@ -235,20 +240,41 @@ header{
 /* --STRATEGIC PLAN*/
 
 /* TESTIMONIALS LAYOUT*/
+.testimonials{
+    width: 100%;
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+
+.test-introduction{
+    width: 80%;
+    padding: 20px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .cntr-mid-container{
-    height: 700px;
     width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .people-card{
-    border-radius: 45px;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 45px;  
     background-color: #9792e4;
     margin-bottom: 30px;
-    border: 1px solid black;
 }
+
 
 
 
