@@ -66,12 +66,50 @@ a{
 }
 
 /*UTILITIES*/
+.cursor-yes{
+    cursor: pointer;
+}
 .pd-15{
     padding: 15px;
 }
 
+.pd-b-20{
+    padding-bottom: 20px;
+}
 
+.mrg-r-10{
+    margin-right: 10px;
+}
 
+.mrg-l-10{
+    margin-left: 10px;
+}
+/*LINE HEIGHT*/
+.lh-35{
+    line-height: 35px;
+}
+
+.lh-25{
+    list-style: 25px;
+}
+/*FONT SIZE*/
+.size-up{
+    font-size: 1.2rem;
+}
+/*COLORI */
+.light-black{
+    color: #171717;
+}
+.violet-text{
+    color: #9792e4;
+}
+/*POSITION*/
+.abs{
+    position: absolute;
+}
+.rel{
+    position: relative;
+}
 /*HEADER SETTINGS*/
 header{
     position: fixed;
@@ -80,6 +118,7 @@ header{
     height: 60px;
     width: 100%;
     background-color: #0084fd;
+    z-index: 999;
 }
 
 .header-container{
@@ -285,7 +324,15 @@ header{
     margin-bottom: 30px;
 }
 
+.bold{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
 
+.strong-title{
+    font-size: clamp(1.6rem, 2.2rem + 0.3vw, 3rem);
+    padding-bottom: 10px;
+}
 
 
 /*TESTIMONIALS TABLET*/
@@ -343,31 +390,42 @@ header{
         width: 45%;
     }    
 }
+
 /*WHY US DESKTOP*/
 @media screen and (min-width:992px) {
     .reason-card{
         width: 30%;
     }
 }
+
 /*ABOUT US LAYOUT*/
 .abt-us-container{
-    height: 700px;
     width: 80%;
-    background-color: #4b3efa;
     margin: 0 auto;
 }
 .left{
-    background-color: bisque;
-    height: 500px;
-    border: 1px solid black;
     width: 100%;
+    
 }
 
 .right{
-    height: 300px;
-    background-color: burlywood;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
     width: 100%;
+    
+}
+
+.bg-violet{
+    background-color: #9792e4;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.quotes.abs{
+    top: 0;
+    right: 30;
+    z-index: 20;
 }
 
 /*ABOUT US TABLET*/
@@ -375,7 +433,9 @@ header{
     .abt-us-container{
         display: flex;
         justify-content: center;
-        align-items: center;
+        
+        padding-top: 20px;
+        gap: 10px;
     }
 
     .left{
@@ -384,7 +444,8 @@ header{
 
     .right{
         width: 30%;
-        height: 500px;
+        padding-top: 15px;
+        margin-right: 15px;
     }
 }
 
