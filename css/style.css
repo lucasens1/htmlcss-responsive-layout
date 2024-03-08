@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'PT Sans';
+}
 img{
     max-width: 100%;
 }
@@ -22,6 +24,9 @@ a{
 }
 .white-txt{
     color: white;
+}
+.align-left{
+    text-align: left;
 }
 
 
@@ -245,13 +250,18 @@ header{
 }
 
 .image-cropper {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border-radius: 50%;
 }
 
-
+.image-cropper img{
+    width: 100%; 
+    aspect-ratio: 1;
+    object-position: center;
+    object-fit: cover;
+}
 
 .test-introduction{
     width: 80%;
@@ -292,18 +302,33 @@ header{
 
 /*WHY US LAYOUT*/
 .btm-mid-container{
-    height: 700px;
     width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
 }
 .reason-card{
-    border-radius: 45px;
-    height: 150px;
+    border-radius: 25px;
+    padding: 20px;
     background-color: #ffffff;
     margin-bottom: 30px;
-    border: 1px solid black;
 }
+.reason-card h2,
+.reason-card h3{
+    color: #9792e4;
+    padding-bottom: 20px;
+}
+
+.reason-card p{
+    color: #5a6e7f;
+    padding-bottom: 20px;
+}
+
+.btn-style-reason{
+    background-color: #9792e4;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 /*WHY US TABLET*/
 @media screen and (min-width: 768px) {
     .btm-mid-container{
